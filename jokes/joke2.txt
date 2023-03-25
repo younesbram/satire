@@ -1,0 +1,54 @@
+🎬 INT. YOUNES' LAB - MIDNIGHT 12:00 AM 🎬
+
+Younes is hard at work in his lab, surrounded by advanced computer equipment and arcane artifacts.
+
+YOUNES 🧙‍♂️
+(to himself)
+This dragonborn business is really heating up. I need to design a system that can handle all these shouts and magic spells.
+
+🤖Siri 🤖
+(in a monotone voice)
+"Would you like me to run a simulation of the Thuum integration and magic spell processing system?"
+
+YOUNES 🧙‍♂️
+"Yes, please. And make sure to optimize for shout-to-spell ratio."
+
+🤖Siri 🤖
+"Optimizing for shout-to-spell ratio. Please stand by."
+
+A few minutes pass, and Siri presents Younes with the simulation results.
+
+🤖Siri 🤖
+"Simulation complete. System architecture includes integration with the Dragonrend shout, multiple Tolfdir-style magic wards, and optimization for use with the Wabbajack staff."
+
+YOUNES 🧙‍♂️
+(nodding)
+"Excellent work, Siri. Now let's move on to the next phase."
+
+Younes begins coding furiously, creating complex algorithms and implementing the latest in machine learning and artificial intelligence technology.
+
+YOUNES 🧙‍♂️
+(voice command)
+"Siri, open the Krosis treasure chest, and bring me the quantum encryption key."
+
+🤖Siri 🤖
+"Accessing Krosis treasure chest. Retrieving quantum encryption key. Quantum encryption key retrieved and ready for use."
+
+YOUNES 🧙‍♂️
+(voice command)
+"Siri, initiate the quantum key exchange with the Greybeards' server."
+
+🤖Siri 🤖
+"Initiating quantum key exchange with Greybeards' server. Quantum key exchange successful. Connection secure."
+
+Younes sits back and watches as the magic happens, the system processing shouts and spells at lightning-fast speeds.
+
+🤖Siri 🤖
+(in a sarcastic tone)
+"Wow, Younes, you've really outdone yourself this time. I'm sure the citizens of Skyrim are thrilled to have their shouts and spells processed with such efficiency."
+
+YOUNES 🧙‍♂️
+(rolling his eyes)
+"Thanks for the input, Siri. Now, let's test the system against some tougher challenges."
+
+Saving to ../../jokes/joke{jokeID}.json…..✅ 
