@@ -1,17 +1,32 @@
 const jokesList = document.getElementById("jokes-list");
 
-function fetchAndDisplayJoke(url) {
-  fetch(url)
-    .then((response) => response.text())
-    .then((joke) => {
-      const li = document.createElement("li");
-      li.className = "joke";
-      li.innerText = joke;
-      jokesList.appendChild(li);
-    });
-}
+const jokes = [
+    {
+        caption: "Redesigning Netflix push notifications - 1 trillion users",
+        url: "https://raw.githubusercontent.com/younesbram/promptengineer/master/jokes/joke1.txt",
+    },
+    // Add more jokes here
+];
 
-const numberOfJokes = 5; // Replace this with the number of joke text files you have
+jokes.forEach((joke) => {
+    const li = document.createElement("li");
+    li.className = "joke";
+    const a = document.createElement("a");
+    a.href = "#";
+    a.setAttribute("data-url", joke.url);
+    a.innerText = joke.caption;
+    li.appendChild(a);
+    jokesList.appendChild(li);
+});
 
-for (let i = 1; i <= numberOfJokes; i++) {
-  const url = `https://raw.githubusercontent.com/username/repository-name/branch-name/path/to/joke
+jokesList.addEventListener("click", (event) => {
+    if (event.target.tagName === "A") {
+        event.preventDefault();
+        const url = event.target.getAttribute("data-url");
+        fetch(url)
+          .then((response) => response.text())
+          .then((joke) => {
+            window.location.href = `joke.html?joke=${encodeURIComponent(joke)}`;
+          });
+    }
+});

@@ -1,50 +1,119 @@
 body {
-  background-color: #5e5e99;
+    font-family: 'Roboto', sans-serif;
+    background-color: #240363;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    color: #2f5066;
 }
 
 header {
-  background-color: #7a7ad4;
-  color: white;
-  padding: 10px;
+    background-color: #34036d;
+    color: #000000;
+    padding: 10px;
+    border-bottom: 2px solid #3c4b55;
+}
+
+/* Add hover effect for header */
+header:hover {
+    background-color: #2b2ba1;
+    color: #d840d0;
+    cursor: pointer;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav li {
-  display: inline-block;
-  margin-right: 20px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f00000;
+    text-decoration: underline;
 }
 
 main {
-  margin: 10px;
+    margin: 20px;
 }
 
 section {
-  background-color: white;
-  padding: 10px;
+    background-color: rgb(31, 27, 37);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(114, 184, 2, 0.1);
 }
 
 section h2 {
-  margin-top: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 #jokes-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .joke {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #718f82;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(131, 103, 103, 0.1);
+    transition: all 0.3s ease;
+}
+
+.joke:hover {
+    background-color: #070c0a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.joke-display {
+    background-color: #63887a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+
+#joke-content {
+    margin: 0;
+    font-size: 1.1em;
+    color: #122a3a;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.back-link {
+    display: inline-block;
+    background-color: #5700bb;
+    color: #b90d0d;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    background-color: #6821d1;
+}
+
+.back-link a:hover {
+    color: #ffffff;
 }
