@@ -12,9 +12,31 @@ header {
     border-bottom: 2px solid #3c4b55;
 }
 
+header:hover {
+    background-color: #2b2ba1;
+    color: #d840d0;
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  
 /*Arrrrrrr*/
 .swashbuckler-mode {
-    text-indent: -9999px;
+    text-indent: -42666px;
 }
 
 /* Add hover effect for header */
@@ -28,10 +50,11 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 nav li {
-    display: inline-block;
+    display: flexbox;
     margin-right: 20px;
 }
 
@@ -43,7 +66,9 @@ nav a {
 nav a:hover {
     color: #f00000;
     text-decoration: underline;
-}
+    transform: translateY(-2px);
+  }
+  
 
 main {
     margin: 20px;
@@ -80,6 +105,8 @@ section h2 {
     background-color: #070c0a;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    transform: translateY(-2px);
+
 }
 
 .joke-display {
@@ -117,7 +144,9 @@ section h2 {
 
 .back-link:hover {
     background-color: #6821d1;
-}
+    transform: translateY(-2px);
+  }
+  
 
 .back-link a:hover {
     color: #ffffff;

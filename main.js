@@ -3,18 +3,22 @@ const jokesList = document.getElementById("jokes-list");
 const jokes = [
   {
     caption: "Redesigning Netflix push notifications - 1 trillion users",
-    url: "https://raw.githubusercontent.com/younesbram/promptengineer/master/jokes/joke1.txt"
+    url: "https://raw.githubusercontent.com/younesbram/satire/master/jokes/joke1.txt",
+    image: "https://raw.githubusercontent.com/younesbram/satire/master/images/1.jpg"
   },
   {
-    caption: "Skyrim Engineer",
-    url: "https://raw.githubusercontent.com/younesbram/promptengineer/master/jokes/joke2.txt"
+    caption: "Skyrim Security Engineer",
+    url: "https://raw.githubusercontent.com/younesbram/satire/master/jokes/joke2.txt",
+    image: "https://raw.githubusercontent.com/younesbram/satire/master/images/2.jpg"
   },
   {
-    caption: "Apple iSeinfeld",
-    url: "https://raw.githubusercontent.com/younesbram/promptengineer/master/jokes/joke3.txt"
+    caption: "Apple iSeinfeld Overworked Engineer",
+    url: "https://raw.githubusercontent.com/younesbram/satire/master/jokes/joke3.txt",
+    image: "https://raw.githubusercontent.com/younesbram/satire/master/images/3.jpg"
   }
   // Add more jokes here
 ];
+
 
 jokes.forEach((joke) => {
   const li = document.createElement("li");
@@ -22,10 +26,17 @@ jokes.forEach((joke) => {
   const a = document.createElement("a");
   a.href = "#";
   a.setAttribute("data-url", joke.url);
-  a.innerText = joke.caption;
+  const img = document.createElement("img");
+  img.src = joke.image;
+  img.alt = joke.caption;
+  a.appendChild(img);
+  const caption = document.createElement("p");
+  caption.innerText = joke.caption;
+  a.appendChild(caption);
   li.appendChild(a);
   jokesList.appendChild(li);
 });
+
 
 jokesList.addEventListener("click", (event) => {
   if (event.target.tagName === "A") {
