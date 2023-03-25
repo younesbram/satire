@@ -1,0 +1,65 @@
+🏤INT. YOUNES' APARTMENT - MORNING 6:00 AM 03-10-2024
+
+Younes wakes up and rubs his eyes, thinking about his responsibility of redesigning the system design for Netflix notifications. As he steps into the shower, he starts thinking about how Netflix now has a trillion users.
+
+YOUNES😃 
+(to himself, sarcastically)
+Time to think of a way to redesign Netflix push notifications. Because, you know, that's what they pay me the big bucks for.
+
+YOUNES😃
+(to himself)
+"We need to figure out how to scale push messaging for a trillion devices while ensuring near real-time performance."
+
+Younes spends the next few minutes thinking about the requirements of the system, the backend systems that need to send notifications to various clients, and the various clients themselves.
+
+As Younes finishes up his shower, he has a breakthrough idea.
+
+YOUNES😃
+(voice command)
+"Siri, I have an idea for the Netflix notification system. Use FigmaGPT Plugin and GPT4 to generate ten potential flowcharts for a new architecture for the Netflix push notification system. The architecture should include the use of Amazon's Elastic Load Balancer (ELB) service, and our netflix and open source dependencies that we currently use. Add any that might be useful. The design should also ensure that the system can handle >1,000,000,000,000 push notifications in near real-time."
+
+🤖Siri complies, and Younes spends the next few hours reviewing the generated architectures, selecting the best one.
+
+ELB, Zuul API Gateway Service, Application API component, Play API, microservices, Stream Processing Pipeline, distributed messaging queue, and Open Connect network - Selected✅  
+
+
+
+
+
+YOUNES😃
+(voice command)
+"Siri, give Copilot X access to my Netflix push notification system GitHub repository and set it up to generate the code for the selected architecture. And, you know, maybe add a hidden Easter egg about the Riemann Hypothesis."
+
+🤖Siri reviews the code and acknowledges the Easter egg with an artificial chuckle before pushing it to Younes' repository.
+
+YOUNES😃
+(voice command)
+"Siri, form 10 threat models with a variety of attack vectors to try to undermine this notification system in multiple malicious ways–don't worry, I’m a researcher."
+
+🤖After reminding Younes of Computing Ethics, Siri follows Younes' command, and within minutes, multiple graphs and flowcharts form, with various captioning and color coding as pre-trained with younes’ few-shot examples where he fed his previous cryptanalysis work.
+
+He reviews the threat models, and creates and implements some fixes and tweaks to try to protect the system even more.
+
+YOUNES😃
+(voice command)
+"Siri, run a Burp Suite + OWASPGPT security scan on the Netflix push notification system and compare it against my threat models."
+
+🤖Siri runs the scan and presents the results to Younes. He studies the report carefully, analyzing potential vulnerabilities and attack scenarios.
+
+YOUNES😃
+(to himself)
+Interesting. It looks like my previous fixes and tweaks have helped mitigate some of the vulnerabilities, but there are still a few areas of concern. I'll have to dig deeper.
+
+Younes spends the next few days monitoring the system, tweaking and optimizing it to make sure it's running smoothly.
+
+YOUNES😃
+(to himself)
+"I'm proud of what we've accomplished here. Netflix notifications are now more reliable and scalable than ever before. Siri, squash all my commits into my branch and create a pull request to the main netflix repo.. Now.. if only I had a dollar for every push notification I optimized. I'd be able to afford a netflix subscription"
+
+🤖Siri
+(in Seinfeld-TTS)
+"Well, Younes, what's the deal with push notifications anyway? You optimize them, and yet, somehow, we still can't find anything good to watch on Netflix! Maybe you should've optimized the recommendation algorithm instead, huh?"
+
+Saving to ../../jokes/joke{jokeID}.json…..✅ 
+
+
