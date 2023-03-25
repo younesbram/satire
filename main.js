@@ -19,7 +19,6 @@ const jokes = [
   // Add more jokes here
 ];
 
-
 jokes.forEach((joke) => {
   const li = document.createElement("li");
   li.className = "joke";
@@ -37,9 +36,17 @@ jokes.forEach((joke) => {
   jokesList.appendChild(li);
 });
 
-
 jokesList.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
+  if (event.target.tagName === "IMG" || event.target.tagName === "P") {
+    const a = event.target.closest("a");
+    const url = a.getAttribute("data-url");
+    fetch(url)
+      .then((response) => response.text())
+      .then((joke) => {
+        window.location.href = `joke.html?joke=${encodeURIComponent(joke)}`;
+      });
+  }
+  else if (event.target.tagName === "A") {
     event.preventDefault();
     const url = event.target.getAttribute("data-url");
     fetch(url)
@@ -49,3 +56,13 @@ jokesList.addEventListener("click", (event) => {
       });
   }
 });
+
+const starContainer = document.getElementById("stars");
+
+for (let i = 0; i < 100; i++) {
+  const star = document.createElement("div");
+  star.className = "star";
+  star.style.left = `${Math.random() * 100}%`;
+  star.style.top = `${Math.random() * 100}%`;
+  starContainer.appendChild(star);
+}

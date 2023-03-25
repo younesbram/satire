@@ -1,50 +1,73 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #240363;
-    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
     color: #2f5066;
 }
 
-header {
-    background-color: #34036d;
-    color: #000000;
-    padding: 10px;
-    border-bottom: 2px solid #3c4b55;
+#stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-header:hover {
-    background-color: #2b2ba1;
-    color: #d840d0;
-    cursor: pointer;
-    transform: translateY(-2px);
+.star {
+    position: absolute;
+    background-color: rgb(29, 67, 238);
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 2px white, 0 0 10px white;
+    animation: twinkling 3s ease-in-out infinite;
   }
   
+  @keyframes twinkling {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.69);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+
+header {
+    background-color: transparent;
+    color: #1DA1F2;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
 
 img {
     max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-  }
+    transition: all 0.5s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
-  
+img:hover {
+    transform: scale(1.089999);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
 /*Arrrrrrr*/
 .swashbuckler-mode {
     text-indent: -42666px;
 }
 
-/* Add hover effect for header */
-header:hover {
-    background-color: #2b2ba1;
-    color: #d840d0;
-    cursor: pointer;
-}
 
 nav ul {
     margin: 0;
@@ -64,26 +87,26 @@ nav a {
 }
 
 nav a:hover {
-    color: #f00000;
+    color: #f3f1f1;
     text-decoration: underline;
     transform: translateY(-2px);
-  }
-  
+}
 
 main {
     margin: 20px;
 }
 
 section {
-    background-color: rgb(31, 27, 37);
-    padding: 20px;
-    border-radius: 5px;
+    background-color: rgb(23, 8, 44);
+    padding: 25px;
+    border-radius: 42px;
     box-shadow: 0 4px 6px rgba(114, 184, 2, 0.1);
 }
 
 section h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color:#1DA1F2;
 }
 
 #jokes-list {
@@ -92,25 +115,33 @@ section h2 {
     padding: 0;
 }
 
-.joke {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #718f82;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(131, 103, 103, 0.1);
-    transition: all 0.3s ease;
+.jokes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(215.999px, 1fr));
+    grid-gap: 50px;
+    padding: 0;
 }
 
+.joke {
+    padding: 0px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(37, 19, 88, 0.1);
+    transition: all 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 250px;
+}
+
+
 .joke:hover {
-    background-color: #070c0a;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transform: translateY(-2px);
-
 }
 
 .joke-display {
-    background-color: #63887a;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -118,36 +149,60 @@ section h2 {
     line-height: 1.5;
 }
 
-
 #joke-content {
     margin: 0;
-    font-size: 1.1em;
-    color: #122a3a;
+    color: #1da0f2da;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
 .back-link {
     display: inline-block;
-    background-color: #5700bb;
-    color: #b90d0d;
+    background-color: #1da0f2b2;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .back-link a {
-    color: #ffffff;
+    color: #e3e0e7d5;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 .back-link:hover {
-    background-color: #6821d1;
-    transform: translateY(-2px);
-  }
-  
+    transform: translateY(-10px) rotate(15deg) scale(1.22222);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-link:focus, .back-link:active {
+    transform: translateY(0);
+}
+
+.back-link:focus, .back-link:active, .back-link:hover {
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: #1DA1F2;
+}
 
 .back-link a:hover {
     color: #ffffff;
+}
+
+p{
+    color: #1DA1F2;
+}
+
+a{
+    color: #1DA1F2;
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: underline; 
 }
